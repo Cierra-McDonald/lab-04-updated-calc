@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <title>Cierra's Calc</title>
+</head>
+
+<body>
+    <header>
+        <div class="gutter-right logo">
+            <img src="assets/big-logo.png"/>
+        </div>
+    </header>
+    <main>
+        <section class="main-section">
+            <img class="main-logo" src="assets/alchemy-logo.png"/>
+            <h2>
+                Ca.l.Cu.LA.TOR!
+            </h2>
+            <section id="blob">
+                <input id="additionBox1"/>
+                +
+                <input id="additionBox2"/>
+                <button id="sumButton"> Sum It Up! </button>
+                <div id="add-results"></div>
+            </section>
+        <br>
+            <section>
+                <input id="subtractionBox1"/>
+                - 
+                <input id="subtractionBox2"/>
+                <button id="subtractionButton">What's the Difference?</button>
+                <div id="sub-results"></div>
+            </section> 
+        <br>
+            <section>
+                <input id="divisionBox1"/>
+                /
+                <input id="divisionBox2"/>
+                <button id="divButton"> Dive Down</button>
+                <div id="divResults"></div>
+            </section>
+        <br>
+            <section>
+                <input id="multiplyBox1"/>
+                *
+                <input id="multiplyBox2"/>
+                <button id="multiButton">MultiFly!</button>
+                <div id="multiResults"></div>
+            </section>
+            
+
+        </section>
+    </main>
+    <footer>
+        <div class="copy gutter-right">&copy; 2020 Alchemy Code Lab</div>
+    </footer>
+
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>
