@@ -1,6 +1,8 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
 import {getSum} from '..mathUtils.js' 
+import {beDifferent} from '..mathUtils.js';
+
 
 
 const test = QUnit.test;
@@ -18,3 +20,4 @@ test('time to test a function', (expect) => {
     // Make assertions about what is expected versus the actual result
     expect.equal(actual, expected);
 });
+
