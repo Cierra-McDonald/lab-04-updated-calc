@@ -1,6 +1,7 @@
-import { mySumButton, mySubButton, myDivButton, myMultButton } from './handlers.js';
-import { getSum, beDifferent, getDivision, getProduct } from './mathUtils.js';
-
+import { calculateHandler } from './handlers.js';
+// ***Un-comment the import below if you want to undo the 'calculateHandle refractor***
+// import { mySumButton, mySubButton, myDivButton, myMultButton, calculateHandler } from './handlers.js';
+import { getSum, beDifferent, getDivision, getProduct } from '/modules/mathUtils.js';
 // initialize state
 
 // set event listeners to updatse state and DOM
@@ -27,15 +28,22 @@ const multiplyResults = document.getElementById("multiResults");
 
 
 summationButton.addEventListener('click', () => {
-    mySumButton(additionField1, additionField2, addResults);
+
+    calculateHandler(additionField1, additionField2, getSum, addResults);
+
+    // mySumButton(additionField1, additionField2, addResults);
 });
 subButton.addEventListener('click', () => {
-    mySubButton(subtractField1, subtractField2, subResults);
+    calculateHandler(subtractField1, subtractField2, beDifferent, subResults);
+    // mySubButton(subtractField1, subtractField2, subResults);
 });
 divisionButton.addEventListener('click', () => {
-    myDivButton(divField1, divField2, divyResults);
+    calculateHandler(divField1, divField2, getDivision, divyResults);
+    // myDivButton(divField1, divField2, divyResults);
 });
 multiplyButton.addEventListener('click', () => {
-    myMultButton(multiField1, multiField2, multiplyResults);
+    calculateHandler(multiField1, multiField2, getProduct, multiplyResults);
+    // myMultButton(multiField1, multiField2, multiplyResults);
 });
+
 

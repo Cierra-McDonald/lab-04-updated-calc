@@ -30,6 +30,16 @@ main {
     margin-bottom: calc(var(--footer-height));
 }
 
+.blob {
+    background-color: lightblue;
+    display: inline-flex, c
+    
+}
+.blah {
+    background-color: lightsteelblue;
+    display: inline-flex
+}
+
 section {
     background-color: coral;
     width: 1000px;
